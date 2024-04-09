@@ -1,0 +1,10 @@
+﻿@model AspNet.MVC.Models.Book[]
+
+<h1>Exam</h1>
+
+<ul>
+    @foreach (var book in Model)
+    {
+        <li>@book.ImeKnjige - @book.Author.Ime @book.Author.Prezime</li>
+    }
+</ul>
